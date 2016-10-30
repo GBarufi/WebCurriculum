@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Curriculum - Guilherme de Melo</title>
+</head>
+
+<body>
+	<header>
+		<section>
+			<h2>Web Curriculum</h2>
+			<h5>Guilherme de Melo</h5>
+		</section>
+
+		<section>
+			<ul>
+				<li><a href="index.html">Informações</a></li>
+			</ul>
+		</section>
+	</header>
+
+	<main>
+		<form  id="contact-form" class="form-box register-form contact-form">
+        	<div class="contact-form-loader"></div>
+
+			<div class="form-group form-group-lg">
+      			<label for="nome">Nome:</label>	
+      			<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required>
+    		</div>
+
+    		<div class="form-group form-group-lg">
+      			<label for="email">Email:</label>
+     			<input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" required>
+   			</div>
+
+	        <div class="form-group form-group-lg">
+	        	<label for="telefone">Telefone</label>
+	        	<input type="text" class="form-control" name="telefone" id="telefone" placeholder="Digite seu numero" required>
+	        </div>
+
+	        <div class="form-group form-group-lg">
+	        	<label for="mensagem">Mensagem:</label>
+	        	<textarea name="contato" placeholder="Digite aqui sua mensagem" class="form-control" required></textarea>
+	        </div>	
+
+
+   			<div class="btn center-block">
+     			<input id="para"  name="para" type="hidden"  value="douglas.waltricke@hotmail.com"/>
+     			<input type="submit" class="btn-primary btn btn-lg btn-enviar-contact" value="Enviar Mensagem">  
+   			</div>
+    	</form>
+	</main>
+</body>
