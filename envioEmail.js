@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    $("#load").hide();
+
+    $(document).ajaxStart(function () {
+        $("#load").show();
+    });
+
     $("#formContato").on("submit", function (event) {
         var $request = $.ajax({
             method: "POST",
@@ -16,6 +22,8 @@ $(document).ready(function () {
         event.preventDefault();
 
         $request.then(function (response) {
+            $("#load").hide();
+
             if (response) {
                 $("#formContato").trigger("reset");
                 alert('Enviado com sucesso!');
