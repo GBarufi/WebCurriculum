@@ -5,6 +5,9 @@ header {
 body {
   margin: auto; }
 
+body main h4 {
+  background-color: #e3e3e3; }
+
 body li {
   list-style-type: none; }
 
@@ -15,7 +18,8 @@ body li {
 
 .menu {
   background: #004040;
-  height: 50px; }
+  height: 50px;
+  margin-bottom: -27px; }
 
 .menu ul {
   padding: 0px;
@@ -31,5 +35,37 @@ body li {
 
 .menu a:hover {
   text-decoration: underline; }
+
+main p {
+  margin-bottom: -15px; }
+
+.item-main h4 {
+  margin-top: 25px;
+  margin-bottom: -5px; }
+
+.item-main ul {
+  padding: 0px; }
+
+.expProf p:last-child {
+  margin-bottom: 5px; }
+
+footer p {
+  padding: 20px;
+  margin-bottom: 0px;
+  background-color: #e3e3e3; }
+
+form:first-child {
+  margin-top: 35px;
+  width: 30px; }
+
+.labelNome {
+  margin-right: 30.5px;
+  display: inline-block; }
+
+.labelEmail {
+  margin-right: 31.5px; }
+
+.labelTel {
+  margin-right: 14px; }
 
 /*# sourceMappingURL=style.css.map */

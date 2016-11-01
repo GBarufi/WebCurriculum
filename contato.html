@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Web Curriculum - Guilherme de Melo</title>
+  	<meta charset="UTF-8">
+  	<link rel="stylesheet" href="style.css">
+	<script src="js/envioEmail.js"></script>
+  	<title>Web Curriculum - Guilherme de Melo</title>
 </head>
 
 <body>
 	<header>
-		<section>
+		<section class="header">
 			<h2>Web Curriculum</h2>
 			<h5>Guilherme de Melo</h5>
 		</section>
 
-		<section>
+		<section class="menu">
 			<ul>
 				<li><a href="index.html">Informações</a></li>
 			</ul>
@@ -20,34 +22,31 @@
 	</header>
 
 	<main>
-		<form  id="contact-form" class="form-box register-form contact-form">
-        	<div class="contact-form-loader"></div>
+		<form  id="formContato" class="formContato">
+			<section>
+      			<label for="nome" class="labelNome">Nome:</label>	
+      			<input type="text" name="nome" id="nome" required>
+    		</section>
 
-			<div class="form-group form-group-lg">
-      			<label for="nome">Nome:</label>	
-      			<input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome" required>
-    		</div>
+    		<section>
+      			<label for="email" class="labelEmail">Email:</label>
+     			<input type="email" name="email" id="email" required>
+   			</section>
 
-    		<div class="form-group form-group-lg">
-      			<label for="email">Email:</label>
-     			<input type="email" class="form-control" name="email" id="email" placeholder="Digite seu email" required>
-   			</div>
+	        <section>
+	        	<label for="tel" class="labelTel">Telefone:</label>
+	        	<input type="text" name="tel" id="tel" required>
+	        </section>
 
-	        <div class="form-group form-group-lg">
-	        	<label for="telefone">Telefone</label>
-	        	<input type="text" class="form-control" name="telefone" id="telefone" placeholder="Digite seu numero" required>
-	        </div>
+	        <section>
+	        	<label for="msg" class="labelMsg">Mensagem:</label>
+	        	<textarea name="msg" required></textarea>
+	        </section>	
 
-	        <div class="form-group form-group-lg">
-	        	<label for="mensagem">Mensagem:</label>
-	        	<textarea name="contato" placeholder="Digite aqui sua mensagem" class="form-control" required></textarea>
-	        </div>	
-
-
-   			<div class="btn center-block">
-     			<input id="para"  name="para" type="hidden"  value="douglas.waltricke@hotmail.com"/>
-     			<input type="submit" class="btn-primary btn btn-lg btn-enviar-contact" value="Enviar Mensagem">  
-   			</div>
+   			<section>
+     			<input type="submit" value="Enviar">
+     			<input id="destinoEmail" name="destinoEmail" value="gm.barufi@gmail.com" type="hidden"/>
+   			</section>
     	</form>
 	</main>
 </body>
