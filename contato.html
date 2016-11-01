@@ -3,7 +3,8 @@
 <head>
   	<meta charset="UTF-8">
   	<link rel="stylesheet" href="style.css">
-	<script src="js/envioEmail.js"></script>
+  	<script src="jquery.min.js"></script>
+	<script src="envioEmail.js"></script>
   	<title>Web Curriculum - Guilherme de Melo</title>
 </head>
 
@@ -22,7 +23,7 @@
 	</header>
 
 	<main>
-		<form  id="formContato" class="formContato">
+		<form id="formContato" class="formContato">
 			<section>
       			<label for="nome" class="labelNome">Nome:</label>	
       			<input type="text" name="nome" id="nome" required>
@@ -40,7 +41,7 @@
 
 	        <section>
 	        	<label for="msg" class="labelMsg">Mensagem:</label>
-	        	<textarea name="msg" required></textarea>
+	        	<input type="text" name="msg" id="msg" required>
 	        </section>	
 
    			<section>
@@ -48,5 +49,9 @@
      			<input id="destinoEmail" name="destinoEmail" value="gm.barufi@gmail.com" type="hidden"/>
    			</section>
     	</form>
+
+    	<figure id="load" class="gifLoad">
+	    	<img src="loading.gif" alt="Enviando"/>
+	    </figure>
 	</main>
 </body>
